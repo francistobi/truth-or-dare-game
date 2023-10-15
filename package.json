@@ -1,0 +1,19 @@
+{
+  "name": "truth-or-dare",
+  "version": "1.0.0",
+  "description": "nice game to play with friends",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francistobi/truth-or-dare.git"
+  },
+  "author": "Obigwe francis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francistobi/truth-or-dare/issues"
+  },
+  "homepage": "https://github.com/francistobi/truth-or-dare#readme"
+}

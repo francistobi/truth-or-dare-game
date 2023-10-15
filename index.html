@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truth or Dare Game</title>
+    <link rel="stylesheet" href="./css-files/tord.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./assets/newimg.jpeg" width="150px" />
+      <div class="displayarea">
+        <h2>Truth or Dare</h2>
+        <p class="question">
+          
+        </p>
+        <div class="rating">
+          <button class="rbutton" id="pg">Pg</button>
+          <button class="rbutton" id="pg13">Pg13</button>
+          <button class="rbutton" id="R">R</button>
+        </div>
+        <!-- <button class="btn">Next</button> -->
+        <div class="options">
+          <button class="truth">Truth</button>
+          <button class="dare">Dare</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const apiUrl = "https://api.truthordarebot.xyz/api/";
+      const pg = document.getElementById("pg");
+      const pg13 = document.getElementById("pg13");
+      const R = document.getElementById("R");
+      const truth = document.querySelector(".truth");
+      const dare = document.querySelector(".dare");
+      let currentRating = "";
+      async function truthOrDare(pick, rating) {
+        const fullUrl = `${apiUrl}${pick}?rating=${rating}`;
+        const response = await fetch(fullUrl);
+        const data = await response.json();
+        document.querySelector(".question").innerHTML = data.question;
+        console.log(data);
+      }
+      truth.addEventListener("click", () => {
+       if(currentRating){
+           truthOrDare("truth", currentRating)
+      }});
+    
+      dare.addEventListener("click", () => {
+        if(currentRating){
+           truthOrDare("Dare", currentRating)
+      }});
+      pg.addEventListener("click", () => {
+         currentRating= "pg";
+      });
+      pg13.addEventListener("click", () => {
+         currentRating= "pg13";
+    });
+      R.addEventListener("click", () => {
+        currentRating= "R";
+    });
+      
+      
+    
+    </script>
+  </body>
+</html>

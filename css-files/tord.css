@@ -39,6 +39,7 @@ h2 {
 .truth,
 .dare {
   background-color: black;
+  grid-template-rows: 20px;
   color: #fff;
   border: none;
   padding: 15px 40px;

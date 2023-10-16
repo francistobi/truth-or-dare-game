@@ -33,19 +33,25 @@ h2 {
   padding: 10px;
 }
 .options {
-  margin-top: 20px;
-  display: inline;
+    margin-top: 20px;
+  display:grid;
+  grid-template-columns:repeat(2, 4fr);
+  column-gap: 10px;
+  margin: 10px 25px;
+  padding: 1rem;
 }
 .truth,
 .dare {
   background-color: black;
-  display: inline;
   color: #fff;
   border: none;
-  padding: 15px 40px;
+  width: 50%;
+  max-width: 30px;
+  padding: 15px 50px;
   border-radius: 7px;
   cursor: pointer;
-  margin: 20px 20px;
+  margin: 0  auto;
+  align-items: center;
   box-shadow: 5px 5px 10px 0px rgb(0, 0, 0);
 }
 
@@ -83,4 +89,3 @@ h2 {
 .rbutton:active {
   background-color: white;
 }
- 

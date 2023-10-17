@@ -38,10 +38,11 @@ h2 {
 }
 .options {
   text-align: center;
-  display: flexbox;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  flex-wrap: nowrap;
 }
 .truth,
 .dare {

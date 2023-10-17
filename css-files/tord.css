@@ -7,6 +7,10 @@ body {
   text-align: center;
   margin: 20px;
 }
+h3{
+  font-family: 'Acme', sans-serif;
+  font-size: 30px;
+  }
 
 .displayarea {
   background-image: linear-gradient(10deg, #ff00f2, #ffcf33);
@@ -34,13 +38,11 @@ h2 {
 }
 .options {
   text-align: center;
-  display: flex;
+  display: flexbox;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  flex-wrap: nowrap; /* Prevent items from wrapping */
 }
-
 .truth,
 .dare {
   background-color: black;

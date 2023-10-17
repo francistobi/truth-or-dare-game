@@ -34,12 +34,13 @@ h2 {
 }
 .options {
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(2, 4fr);
-  column-gap: 29px;
-  margin: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 2rem;
+  flex-wrap: nowrap; /* Prevent items from wrapping */
 }
+
 .truth,
 .dare {
   background-color: black;
@@ -49,7 +50,8 @@ h2 {
   border: none;
   border-radius: 7px;
   cursor: pointer;
-  margin: 0 auto;
+  margin: 20px;
+  padding: 0;
   box-shadow: 5px 5px 10px 0px rgb(0, 0, 0);
 }
 

@@ -26,7 +26,8 @@ h2 {
   font-size: 40px;
   margin: 0;
   color: black;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Acme', sans-serif;
+  font-size: 60px;
 }
 .question {
   font-size: 15px;
